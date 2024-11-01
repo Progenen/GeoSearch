@@ -3,16 +3,28 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    font-family: Roboto;
-    font-size: 1rem;
+    font-family: Mulish;
+    font-size: 16px;
     font-weight: 400;
+}
+
+:root {
+    --color-black: #242626;
+    --color-yellow: #F8CD24;
+    --color-green: #89BD42;
+    
+}
+
+.container {
+    max-width: 1570px;
+    --bs-gutter-x: 5.71rem
 }
 
 body,
@@ -39,4 +51,34 @@ a {
 
 footer {
     flex: 0 0 auto;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    color: #fff; 
+    transition: .3s;
+    &--green-icon {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-green);
+        align-items: center;
+        width: 100%;
+        svg {
+            display: block;
+            width: 22px;
+            height: 22px;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+    }
+    &:hover {
+        background-color: var(--color-yellow);
+    }
 }
