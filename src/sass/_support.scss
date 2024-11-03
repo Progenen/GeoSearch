@@ -59,6 +59,7 @@ $color1: #ff0000;
 
 // Fonts
 @include font-face('Mulish', '../fonts/Mulish/Mulish-Regular', 400, normal, ttf);
+@include font-face('Mulish', '../fonts/Mulish/Mulish-Light', 300, normal, ttf);
 @include font-face('Mulish', '../fonts/Mulish/Mulish-Medium', 500, normal, ttf);
 @include font-face('Mulish', '../fonts/Mulish/Mulish-SemiBold', 600, normal, ttf);
 @include font-face('Mulish', '../fonts/Mulish/Mulish-Bold', 700, normal, ttf);
@@ -68,7 +69,7 @@ $color1: #ff0000;
 // Vars
 
 // Путь к спрайту для конкатенации
-$sprite: "../svg/dest/stack/sprite.svg#";
+$sprite: "../svg/dest/stack/spriteMulti.svg#";
 
 // Mixins
 @mixin btn {

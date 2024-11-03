@@ -19,17 +19,19 @@ body {
     --color-black: #242626;
     --color-yellow: #F8CD24;
     --color-green: #89BD42;
+    --section-gap: 100px;
+    --title-size: 50px;
+    --title-gap: 50px;
     
 }
 
 .container {
-    max-width: 1570px;
+    max-width: 1610px;
     --bs-gutter-x: 5.71rem
 }
 
 body,
 html {
-    height: 100%;
     overflow-x: hidden;
 }
 
@@ -60,6 +62,7 @@ footer {
     cursor: pointer;
     color: #fff; 
     transition: .3s;
+    background-color: var(--color-green);
     &--green-icon {
         display: flex;
         justify-content: center;
@@ -80,5 +83,138 @@ footer {
     }
     &:hover {
         background-color: var(--color-yellow);
+    }
+
+    &--yellow {
+        background-color: var(--color-yellow);
+        &:hover {
+            background-color: var(--color-green);
+        }
+    }
+}
+
+section + section {
+    margin-top: var(--section-gap);
+}
+
+section + .gradient {
+    margin-top: var(--section-gap);
+}
+
+.gradient + section {
+    margin-top: var(--section-gap);
+}
+
+.main-title {
+    h2 {
+        margin: 0 0 var(--title-gap) 0;
+        text-align: center;
+        font-size: var(--title-size);
+        font-weight: 400;
+    }
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+
+    &__controls {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px 0;
+        margin-top: 25px;
+    }
+
+    &__arrow {
+        min-width: 57px;
+        min-height: 57px;
+        width: 57px;
+        height: 57px;
+        border-radius: 50%;
+        background-color: var(--color-yellow);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s;
+        border: none;
+        padding: 0;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 124%;
+            height: 124%;
+            top: -12%;
+            left: -12%;
+            background: rgba($color: #D8BF8A, $alpha: .1);
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        svg {
+            width: 18px;
+            height: 16px;
+            transition: 0.3s;
+            fill: #fff;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            &::after {
+                transform: scale(1.05);
+            }
+        }
+
+        &--prev {
+            transform: rotate(-180deg);
+            &:hover {
+                transform: scale(1.05) rotate(-180deg);
+            }
+        }
+    }
+
+    &__pag {
+        display: flex !important;
+        gap: 30px;
+        top: 0 !important;
+        bottom: 0 !important;
+        position: relative !important;
+        .swiper-pagination-bullet {
+            width: 28px;
+            height: 28px;
+            padding: 8px;
+            border: 2px solid transparent;
+            background: transparent;
+            position: relative;
+            display: flex;
+            align-items: center;
+            opacity: 1;
+            justify-content: center;
+            margin: 0 !important;
+            cursor: pointer;
+            transition: .3s;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 50%;
+                width: 50%;
+                border-radius: 50%;
+                background-color: #D9D9D9;
+                transition: .3s;
+            }
+
+            &.swiper-pagination-bullet-active {
+                border-color: var(--color-yellow);
+                &::after {
+                    background-color: var(--color-yellow);
+                }
+            }
+        }
     }
 }
