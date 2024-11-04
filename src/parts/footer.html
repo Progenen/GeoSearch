@@ -59,7 +59,7 @@
                             +7 (928) 851-17-31
                         </a>
                     </div>
-                    <a href="#" class="header__call-link">
+                    <a href="#" class="header__call-link modal-call-open">
                         Заказать звонок
                     </a>
                 </div>
@@ -115,6 +115,53 @@
 <div class="mobmenu">
     <div class="mobmenu__top"></div>
     <div class="mobmenu__bottom"></div>
+</div>
+<div class="modal-call modal">
+    <button class="modal-call__close modal__close">
+        <svg>
+            <use xlink:href='svg/dest/stack/spriteMono.svg#cross'></use>
+        </svg>
+    </button>
+    <h3>
+        Рассчитать стоимость
+    </h3>
+    <p>
+        наши менеджеры свяжутся с вами в течении 30 минут
+    </p>
+    <form class="modal-call__form" action="#">
+        <input type="text" name="name" placeholder="Имя">
+        <input type="tel" name="phone" placeholder="Телефон">
+        <button class="btn btn--green">
+            Оставить заявку
+        </button>
+        <div class="modal-call__form-checkbox checkbox">
+            <div class="checkbox__input">
+                <input type="checkbox" id="politics1" name="politics">
+                <div class="checkbox__input-icon">
+                    <svg>
+                        <use xlink:href='svg/dest/stack/spriteMulti.svg#checkboxMark'></use>
+                    </svg>
+                </div>
+            </div>
+            <label>
+                Даю согласие на обработку <a href="#">персональных данных</a>
+            </label>
+        </div>
+    </form>
+</div>
+<div class="modal-thanks modal">
+    <button class="modal-thanks__close modal__close">
+        <svg>
+            <use xlink:href='svg/dest/stack/spriteMono.svg#cross'></use>
+        </svg>
+    </button>
+    <img src="images/icons/thanks-icon.webp" alt="">
+    <h3>
+        Спасибо
+    </h3>
+    <p>
+        ваша заявка отправлена
+    </p>
 </div>
 <script src="JS/bundle.js"></script>
 </body>

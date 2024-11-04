@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zlatmax | Development Version</title>
+    <title>Geo Search | Development Version</title>
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -46,7 +46,7 @@
                                     <a href="#" class="header__call-phone">
                                         +7 (928) 851-17-31
                                     </a>
-                                    <a href="#" class="header__call-link">
+                                    <a href="#" class="header__call-link modal-call-open">
                                         Заказать звонок
                                     </a>
                                 </div>
@@ -110,7 +110,7 @@
                                 </nav>
                             </div>
                             <div class="header__col header__col--call-btn col-lg-4 col-md-0">
-                                <button class="header__call-btn btn btn--green-icon">
+                                <button class="header__call-btn btn btn--green-icon modal-call-open">
                                     <svg>
                                         <use xlink:href='svg/dest/stack/spriteMulti.svg#calc'></use>
                                     </svg>
@@ -200,7 +200,7 @@
                                 Цены ниже чем у конкурентов
                             </span>
                         </div>
-                        <button class="dominates__item dominates__item--btn btn">
+                        <button class="dominates__item dominates__item--btn btn modal-call-open">
                             <svg>
                                 <use xlink:href='svg/dest/stack/spriteMulti.svg#calcBlue'></use>
                             </svg>
@@ -245,7 +245,7 @@
                                 <li>Применение оборудования</li>
                                 <li>От срочности выполнения работ</li>
                             </ul>
-                            <button class="services__item-btn btn">
+                            <button class="services__item-btn modal-call-open btn">
                                 Расчет точной стоимост
                             </button>
                         </div>
@@ -273,7 +273,7 @@
                                 <li>Применение оборудования</li>
                                 <li>Срочность выполнения работ</li>
                             </ul>
-                            <button class="services__item-btn btn">
+                            <button class="services__item-btn modal-call-open btn">
                                 Расчет точной стоимост
                             </button>
                         </div>
@@ -299,7 +299,7 @@
                                 <li>Параметры отведенной площадки</li>
                                 <li>Объем требуемых изыскательных процессов</li>
                             </ul>
-                            <button class="services__item-btn btn">
+                            <button class="services__item-btn modal-call-open btn">
                                 Расчет точной стоимост
                             </button>
                         </div>
@@ -327,7 +327,7 @@
                                 <li>Применение оборудования</li>
                                 <li>Срочность выполнения работ</li>
                             </ul>
-                            <button class="services__item-btn btn">
+                            <button class="services__item-btn modal-call-open btn">
                                 Расчет точной стоимост
                             </button>
                         </div>
@@ -355,7 +355,7 @@
                                 <li>Применение оборудования</li>
                                 <li>Срочность выполнения работ</li>
                             </ul>
-                            <button class="services__item-btn btn">
+                            <button class="services__item-btn modal-call-open btn">
                                 Расчет точной стоимост
                             </button>
                         </div>
@@ -383,7 +383,7 @@
                                 <li>Применение оборудования</li>
                                 <li>Срочность выполнения работ</li>
                             </ul>
-                            <button class="services__item-btn btn">
+                            <button class="services__item-btn modal-call-open btn">
                                 Расчет точной стоимост
                             </button>
                         </div>
@@ -1271,7 +1271,7 @@
                             +7 (928) 851-17-31
                         </a>
                     </div>
-                    <a href="#" class="header__call-link">
+                    <a href="#" class="header__call-link modal-call-open">
                         Заказать звонок
                     </a>
                 </div>
@@ -1327,6 +1327,53 @@
 <div class="mobmenu">
     <div class="mobmenu__top"></div>
     <div class="mobmenu__bottom"></div>
+</div>
+<div class="modal-call modal">
+    <button class="modal-call__close modal__close">
+        <svg>
+            <use xlink:href='svg/dest/stack/spriteMono.svg#cross'></use>
+        </svg>
+    </button>
+    <h3>
+        Рассчитать стоимость
+    </h3>
+    <p>
+        наши менеджеры свяжутся с вами в течении 30 минут
+    </p>
+    <form class="modal-call__form" action="#">
+        <input type="text" name="name" placeholder="Имя">
+        <input type="tel" name="phone" placeholder="Телефон">
+        <button class="btn btn--green">
+            Оставить заявку
+        </button>
+        <div class="modal-call__form-checkbox checkbox">
+            <div class="checkbox__input">
+                <input type="checkbox" id="politics1" name="politics">
+                <div class="checkbox__input-icon">
+                    <svg>
+                        <use xlink:href='svg/dest/stack/spriteMulti.svg#checkboxMark'></use>
+                    </svg>
+                </div>
+            </div>
+            <label>
+                Даю согласие на обработку <a href="#">персональных данных</a>
+            </label>
+        </div>
+    </form>
+</div>
+<div class="modal-thanks modal">
+    <button class="modal-thanks__close modal__close">
+        <svg>
+            <use xlink:href='svg/dest/stack/spriteMono.svg#cross'></use>
+        </svg>
+    </button>
+    <img src="images/icons/thanks-icon.webp" alt="">
+    <h3>
+        Спасибо
+    </h3>
+    <p>
+        ваша заявка отправлена
+    </p>
 </div>
 <script src="JS/bundle.js"></script>
 </body>
