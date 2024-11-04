@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     gallerys.forEach(el => {
         new SimpleLightbox(el.querySelectorAll("a"))
-    })
+    });
 
 
 });
