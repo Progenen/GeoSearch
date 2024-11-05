@@ -229,6 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 5,
         resistanceRatio: 1,
         centeredSlides: true,
+        loop: true,
         navigation: {
             prevEl: '.workpoint__slider-arrow--prev',
             nextEl: '.workpoint__slider-arrow--next',
@@ -317,7 +318,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const thanksModal = new MinModalJS('.modal-thanks', {
         buttonsDisActive: ".modal__close"
     });
-
+    
+    callModal.modalOpen();
     thanksModal.modalOpen();
 
 

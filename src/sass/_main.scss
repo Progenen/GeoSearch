@@ -18,6 +18,8 @@
     }
 
     &__title-bg {
+        display: block;
+        width: fit-content;
         position: relative;
         z-index: 3;
         span.text {
