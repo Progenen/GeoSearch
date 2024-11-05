@@ -253,7 +253,7 @@
         }
     }
 
-    &__item-alert {
+    p {
         padding-top: 10px;
         border-top: 1px solid var(--color-yellow);
         margin-bottom: 0;
@@ -261,7 +261,7 @@
         font-weight: 900;
     }
 
-    &__item-list {
+    ul {
         list-style: none;
         padding: 0;
         font-size: 14px;
